@@ -32,7 +32,7 @@
 									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
 									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
+										<a href="/appointment" class="btn">Get Appointment</a>
 										<a href="#" class="btn primary">About Us</a>
 									</div>
 								</div>
@@ -64,7 +64,7 @@
 		<!--/ End Slider Area -->
 		
 		<!-- Start Schedule Area -->
-		<section class="schedule">
+		{{-- <section class="schedule">
 			<div class="container">
 				<div class="schedule-inner">
 					<div class="row">
@@ -123,7 +123,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> --}}
 		<!--/End Start schedule Area -->
 
 		<!-- Start Feautes -->
@@ -132,6 +132,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-title">
+							<br><br><br>
 							<h2>We Are Always Ready to Help You & Your Family</h2>
 							<img src="{{asset('frontend/img/section-img.png') }}" alt="#">
 							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
