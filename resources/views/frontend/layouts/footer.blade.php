@@ -9,9 +9,9 @@
 								<p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>
 								<!-- Social -->
 								<ul class="social">
-									<li><a href="#"><i class="icofont-facebook"></i></a></li>
-									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
-									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="{{ $main_settings['site_social_facebook'] }}"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+									<li><a href="{{ $main_settings['site_social_twitter'] }}"><i class="icofont-twitter"></i></a></li>
 									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
 									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
 								</ul>

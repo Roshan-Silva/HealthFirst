@@ -17,7 +17,7 @@
 							<!-- Top Contact -->
 							<ul class="top-contact">
 								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:{{$main_settings['site_email']}}">{{$main_settings['site_email']}}</a></li>
 							</ul>
 							<!-- End Top Contact -->
 						</div>
