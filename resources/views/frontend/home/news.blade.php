@@ -24,9 +24,9 @@
 							</div>
 							<div class="news-body">
 								<div class="news-content">
-									<div class="date">22 Aug, 2020</div>
-									<h2><a href="blog-single.html">We have annnocuced our new product.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+									<div class="date">{{ $newsItem->date }}</div>
+									<h2><a href="blog-single.html">{{ $newsItem->title }}</a></h2>
+									<p class="text">{{ $newsItem->description }}</p>
 								</div>
 							</div>
 						</div>

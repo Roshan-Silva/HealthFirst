@@ -3,6 +3,7 @@
 use App\Http\Controllers\admin\NewsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\admin\SliderController;
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Slider;
 use App\Models\News;
@@ -37,6 +38,11 @@ Route::controller(NewsController::class)->middleware(['auth', 'verified'])->grou
     Route::post('/newsStore', 'store')->name('news.store');
     Route::post('/newsUpdate', 'update')->name('news.edit');
     Route::get('/newsDelete/{id}', 'destroy')->name('news.delete');
+});
+
+Route::controller(SettingsController::class)->middleware(['auth', 'verified'])->group(function (){
+    Route::get('/settingsIndex', 'index')->name('settings.index');
+    Route::post('/settingsUpdate', 'update')->name('settings.update');
 });
 
 require __DIR__.'/auth.php';
