@@ -43,6 +43,7 @@ Route::controller(NewsController::class)->middleware(['auth', 'verified'])->grou
 Route::controller(SettingsController::class)->middleware(['auth', 'verified'])->group(function (){
     Route::get('/settingsIndex', 'index')->name('settings.index');
     Route::post('/settingsUpdate', 'update')->name('settings.update');
+    
 });
 
 require __DIR__.'/auth.php';
