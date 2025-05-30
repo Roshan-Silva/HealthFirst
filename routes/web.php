@@ -4,16 +4,20 @@ use App\Http\Controllers\admin\NewsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\admin\PostsController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Slider;
 use App\Models\News;
-
-
+use App\Models\Posts;
 
 Route::get('/', function () {
     $sliders = Slider::all();
     $news = News::latest()->take(3)->get(); // Fetch the latest 3 news items
     return view('frontend.home', compact('sliders','news'));
+});
+
+Route::get('/blogs', function () {
+    return view('frontend.blogs');
 });
 
 Route::get('/dashboard', function () {
@@ -43,7 +47,13 @@ Route::controller(NewsController::class)->middleware(['auth', 'verified'])->grou
 Route::controller(SettingsController::class)->middleware(['auth', 'verified'])->group(function (){
     Route::get('/settingsIndex', 'index')->name('settings.index');
     Route::post('/settingsUpdate', 'update')->name('settings.update');
-    
+});
+
+Route::controller(PostsController::class)->middleware(['auth', 'verified'])->group(function (){
+    Route::get('/postsIndex', 'index')->name('posts.index');
+    Route::post('/postsStore', 'store')->name('posts.store');
+    Route::post('/postsUpdate', 'update')->name('posts.edit');
+    Route::get('/postsDelete/{id}', 'destroy')->name('posts.delete');
 });
 
 require __DIR__.'/auth.php';
