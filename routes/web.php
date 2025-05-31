@@ -17,8 +17,18 @@ Route::get('/', function () {
 });
 
 Route::get('/blogs', function () {
-    return view('frontend.blogs');
+    $posts = Posts::latest()->take(6)->get(); // Fetch the latest 6 posts
+    return view('frontend.blogs', compact('posts'));
 });
+
+Route::get('/services',function(){
+    return view('frontend.services');
+});
+
+Route::get('/appointments',function(){
+    return view('frontend.appointments');
+});
+    
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
