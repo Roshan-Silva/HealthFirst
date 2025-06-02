@@ -19,7 +19,7 @@ class SliderController extends Controller
     {
         $validatedData = $request->validate([
             'heading' => 'required|string|max:255',
-            'sub_heading' => 'required|string|max:255',
+            'sub_heading' => 'required|string',
             'get_appointment_link' => 'required|url',
             'contact_link' => 'required|url',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:20480',
@@ -47,7 +47,7 @@ class SliderController extends Controller
         $validatedData = $request->validate([
             'id' => 'required|exists:sliders,id',
             'heading' => 'required|string|max:255',
-            'sub_heading' => 'required|string|max:255',
+            'sub_heading' => 'required|string',
             'get_appointment_link' => 'required|url',
             'contact_link' => 'required|url',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:20480',

@@ -33,7 +33,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.html"><img src="{{asset('frontend/img/logo.png') }}" alt="#"></a>
+									<img src="{{asset('frontend/img/logo_2.png') }}" alt="#">
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -50,7 +50,7 @@
 													<li><a href="index.html">Home Page 1</a></li>
 												</ul> --}}
 											</li>
-											<li><a href="#">Doctos </a></li>
+											<li><a href="#">Doctors </a></li>
 											<li><a href="/services">Services </a></li>
 											{{-- <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">

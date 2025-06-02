@@ -101,7 +101,7 @@
 							<br><br><br>
 							<h2>We Are Always Ready to Help You & Your Family</h2>
 							<img src="{{asset('frontend/img/section-img.png') }}" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<p>Your family’s health and well-being are our top priority. With compassionate care, expert doctors, and 24/7 support, we’re here for you whenever you need us. Trust us to keep you and your loved ones healthy.</p>
 						</div>
 					</div>
 				</div>
@@ -113,7 +113,7 @@
 								<i class="icofont icofont-ambulance-cross"></i>
 							</div>
 							<h3>Emergency Help</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+							<p>Our expert team is always ready for life-threatening injuries and critical conditions. Fast response, advanced equipment, and compassionate care—when every second counts.</p>
 						</div>
 						<!-- End Single features -->
 					</div>
@@ -123,8 +123,8 @@
 							<div class="signle-icon">
 								<i class="icofont icofont-medical-sign-alt"></i>
 							</div>
-							<h3>Enriched Pharmecy</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+							<h3>Enriched Pharmacy</h3>
+							<p>Get genuine prescriptions, wellness products, and personalized advice from our licensed pharmacists. Your health is our priority—inside and outside the clinic.</p>
 						</div>
 						<!-- End Single features -->
 					</div>
@@ -135,7 +135,7 @@
 								<i class="icofont icofont-stethoscope"></i>
 							</div>
 							<h3>Medical Treatment</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+							<p>From diagnostics to specialized treatments, our doctors use cutting-edge technology to create tailored health plans. Because everyone deserves expert care.</p>
 						</div>
 						<!-- End Single features -->
 					</div>
@@ -476,7 +476,7 @@
 		<!--/Ens clients -->
 		
 		<!-- Start Appointment -->
-		<section class="appointment">
+		{{-- <section class="appointment">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -563,7 +563,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> --}}
 		<!-- End Appointment -->
 		
 		<!-- Start Newsletter Area -->

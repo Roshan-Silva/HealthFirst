@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\admin\PostsController;
+use App\Http\Controllers\AppointmentController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Slider;
 use App\Models\News;
@@ -65,5 +66,11 @@ Route::controller(PostsController::class)->middleware(['auth', 'verified'])->gro
     Route::post('/postsUpdate', 'update')->name('posts.edit');
     Route::get('/postsDelete/{id}', 'destroy')->name('posts.delete');
 });
+
+Route::controller(AppointmentController::class)->middleware(['auth', 'verified'])->group(function (){
+    Route::post('/addAppointment', 'store')->name('appointment.store');
+
+});
+
 
 require __DIR__.'/auth.php';
