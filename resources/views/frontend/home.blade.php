@@ -209,7 +209,7 @@
 						<div class="section-title">
 							<h2>We Maintain Cleanliness Rules Inside Our Hospital</h2>
 							<img src="{{asset('frontend/img/section-img.png') }}" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<p>At our hospital, we strictly follow cleanliness and hygiene protocols to ensure a safe and healthy environment for patients, staff, and visitors.</p>
 						</div>
 					</div>
 				</div>
@@ -219,6 +219,22 @@
 					<div class="col-lg-12 col-12">
 						<div class="owl-carousel portfolio-slider">
 							<div class="single-pf">
+								<img src="{{asset('frontend/img/pf01.jpg') }}" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="{{asset('frontend/img/pf02.jpg') }}" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="{{asset('frontend/img/pf01.jpg') }}" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="{{asset('frontend/img/pf02.jpg') }}" alt="#">
+								<a href="portfolio-details.html" class="btn">View Details</a>
+							</div>
+							{{-- <div class="single-pf">
 								<img src="{{asset('frontend/img/pf1.jpg') }}" alt="#">
 								<a href="portfolio-details.html" class="btn">View Details</a>
 							</div>
@@ -233,23 +249,7 @@
 							<div class="single-pf">
 								<img src="{{asset('frontend/img/pf4.jpg') }}" alt="#">
 								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="{{asset('frontend/img/pf1.jpg') }}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="{{asset('frontend/img/pf2.jpg') }}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="{{asset('frontend/img/pf3.jpg') }}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
-							<div class="single-pf">
-								<img src="{{asset('frontend/img/pf4.jpg') }}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 				</div>
