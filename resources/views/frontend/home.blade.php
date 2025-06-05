@@ -220,19 +220,19 @@
 						<div class="owl-carousel portfolio-slider">
 							<div class="single-pf">
 								<img src="{{asset('frontend/img/pf01.jpg') }}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="/cleanliness_rule" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
 								<img src="{{asset('frontend/img/pf02.jpg') }}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="/cleanliness_rule" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
 								<img src="{{asset('frontend/img/pf01.jpg') }}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="/cleanliness_rule" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
 								<img src="{{asset('frontend/img/pf02.jpg') }}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="/cleanliness_rule" class="btn">View Details</a>
 							</div>
 							{{-- <div class="single-pf">
 								<img src="{{asset('frontend/img/pf1.jpg') }}" alt="#">
@@ -265,7 +265,7 @@
 						<div class="section-title">
 							<h2>We Offer Different Services To Improve Your Health</h2>
 							<img src="{{asset('frontend/img/section-img.png') }}" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							{{-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> --}}
 						</div>
 					</div>
 				</div>
@@ -275,7 +275,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-prescription"></i>
 							<h4><a href="service-details.html">General Treatment</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>We provide comprehensive medical care for common illnesses, injuries, and health concerns. Our experienced doctors diagnose and treat a wide range of conditions, ensuring personalized care for every patient. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -284,7 +284,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-tooth"></i>
 							<h4><a href="service-details.html">Teeth Whitening</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Achieve a brighter smile with our safe and effective teeth whitening treatments. Using advanced techniques, we remove stains and discoloration, giving you natural-looking, long-lasting results. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -293,7 +293,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-heart-alt"></i>
 							<h4><a href="service-details.html">Heart Surgery</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Our expert cardiac team performs life-saving heart surgeries, including bypasses, valve repairs, and minimally invasive procedures. We prioritize precision, safety, and advanced technology for optimal outcomes. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -302,7 +302,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-listening"></i>
 							<h4><a href="service-details.html">Ear Treatment</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>From infections to hearing loss, we offer specialized ear care, including diagnostics, treatments, and surgical interventions. Our ENT specialists ensure relief and improved ear health. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -311,7 +311,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-eye-alt"></i>
 							<h4><a href="service-details.html">Vision Problems</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>We diagnose and treat vision issues like myopia, cataracts, and glaucoma. With advanced eye exams and corrective procedures, we help restore and protect your eyesight.</p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -320,7 +320,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-blood"></i>
 							<h4><a href="service-details.html">Blood Transfusion</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Safe and timely blood transfusions are provided for surgeries, emergencies, and chronic conditions. We follow strict screening and storage protocols to ensure patient safety.</p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -330,7 +330,7 @@
 		<!--/ End service -->
 		
 		<!-- Pricing Table -->
-		<section class="pricing-table section">
+		{{-- <section class="pricing-table section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -428,7 +428,7 @@
 					<!-- End Single Table-->
 				</div>	
 			</div>	
-		</section>	
+		</section>	 --}}
 		<!--/ End Pricing Table -->
 		
 		

@@ -27,7 +27,7 @@
 						<div class="section-title">
 							<h2>We Offer Different Services To Improve Your Health</h2>
 							<img src="{{asset('frontend/img/section-img.png') }}" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							
 						</div>
 					</div>
 				</div>
@@ -36,21 +36,21 @@
 						<!-- Start Choose Left -->
 						<div class="choose-left">
 							<h3>Who We Are</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra antege vel est lobortis, a commodo magna rhoncus. In quis nisi non emet quam pharetra commodo. </p>
-							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+							<p>At HealthFirst, we are dedicated to advancing healthcare through excellence, innovation, and compassion. Our team of specialists provides world-class medical care tailored to every patient’s needs.</p>
+							<p>We believe in healing with integrity, leveraging cutting-edge technology, and fostering a community of wellness. </p>
 							<div class="row">
 								<div class="col-lg-6">
 									<ul class="list">
-										<li><i class="bullet"></i>Maecenas vitae luctus nibh. </li>
-										<li><i class="bullet"></i>Duis massa massa.</li>
-										<li><i class="bullet"></i>Aliquam feugiat interdum.</li>
+										<li><i class="bullet"></i>Patient-Centered Care</li>
+										<li><i class="bullet"></i>Expert Team</li>
+										<li><i class="bullet"></i>State-of-the-Art Facilities</li>
 									</ul>
 								</div>
 								<div class="col-lg-6">
 									<ul class="list">
-										<li><i class="bullet"></i>Maecenas vitae luctus nibh. </li>
-										<li><i class="bullet"></i>Duis massa massa.</li>
-										<li><i class="bullet"></i>Aliquam feugiat interdum.</li>
+										<li><i class="bullet"></i>Community Commitment</li>
+										<li><i class="bullet"></i>Global Standards</li>
+										<li><i class="bullet"></i>24/7 Emergency Services</li>
 									</ul>
 								</div>
 							</div>
@@ -86,7 +86,7 @@
                     <div class="col-lg-12 col-md-12 col-12">
                         <div class="content">
                             <h2>Do you need Emergency Medical Care? Call @ {{$main_settings['site_phone']}}</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.</p>
+                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.</p> --}}
                             {{-- <div class="button">
                                 <a href="#" class="btn">Contact Now</a>
                                 <a href="#" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
@@ -107,7 +107,7 @@
 						<div class="section-title">
 							<h2>We Offer Different Services To Improve Your Health</h2>
 							<img src="{{asset('frontend/img/section-img.png') }}" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							{{-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> --}}
 						</div>
 					</div>
 				</div>
@@ -117,7 +117,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-prescription"></i>
 							<h4><a href="service-details.html">General Treatment</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>We provide comprehensive medical care for common illnesses, injuries, and health concerns. Our experienced doctors diagnose and treat a wide range of conditions, ensuring personalized care for every patient. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -126,7 +126,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-tooth"></i>
 							<h4><a href="service-details.html">Teeth Whitening</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Achieve a brighter smile with our safe and effective teeth whitening treatments. Using advanced techniques, we remove stains and discoloration, giving you natural-looking, long-lasting results. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -135,7 +135,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-heart-alt"></i>
 							<h4><a href="service-details.html">Heart Surgery</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Our expert cardiac team performs life-saving heart surgeries, including bypasses, valve repairs, and minimally invasive procedures. We prioritize precision, safety, and advanced technology for optimal outcomes. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -144,7 +144,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-listening"></i>
 							<h4><a href="service-details.html">Ear Treatment</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>From infections to hearing loss, we offer specialized ear care, including diagnostics, treatments, and surgical interventions. Our ENT specialists ensure relief and improved ear health. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -153,7 +153,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-eye-alt"></i>
 							<h4><a href="service-details.html">Vision Problems</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>We diagnose and treat vision issues like myopia, cataracts, and glaucoma. With advanced eye exams and corrective procedures, we help restore and protect your eyesight.</p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -162,7 +162,7 @@
 						<div class="single-service">
 							<i class="icofont icofont-blood"></i>
 							<h4><a href="service-details.html">Blood Transfusion</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Safe and timely blood transfusions are provided for surgeries, emergencies, and chronic conditions. We follow strict screening and storage protocols to ensure patient safety.</p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -179,7 +179,7 @@
 						<div class="section-title">
 							<h2>We Provide You The Best Treatment In Resonable Price</h2>
 							<img src="{{asset('frontend/img/section-img.png') }}" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							{{-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> --}}
 						</div>
 					</div>
 				</div>
@@ -194,7 +194,7 @@
 								</div>
 								<h4 class="title">Plastic Suggery</h4>
 								<div class="price">
-									<p class="amount">$199<span>/ Per Visit</span></p>
+									<p class="amount">Rs. 15000</p>
 								</div>	
 							</div>
 							<!-- Table List -->
@@ -206,7 +206,7 @@
 								<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
 							</ul>
 							<div class="table-bottom">
-								<a class="btn" href="#">Book Now</a>
+								<a class="btn" href="/appointments">Book Now</a>
 							</div>
 							<!-- Table Bottom -->
 						</div>
@@ -222,7 +222,7 @@
 								</div>
 								<h4 class="title">Teeth Whitening</h4>
 								<div class="price">
-									<p class="amount">$299<span>/ Per Visit</span></p>
+									<p class="amount">Rs.5000</p>
 								</div>	
 							</div>
 							<!-- Table List -->
@@ -234,7 +234,7 @@
 								<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
 							</ul>
 							<div class="table-bottom">
-								<a class="btn" href="#">Book Now</a>
+								<a class="btn" href="/appointments">Book Now</a>
 							</div>
 							<!-- Table Bottom -->
 						</div>
@@ -250,7 +250,7 @@
 								</div>
 								<h4 class="title">Heart Suggery</h4>
 								<div class="price">
-									<p class="amount">$399<span>/ Per Visit</span></p>
+									<p class="amount">Rs. 25000</p>
 								</div>	
 							</div>
 							<!-- Table List -->
@@ -262,7 +262,7 @@
 								<li><i class="icofont icofont-ui-check"></i>Pellentesque eget nibh</li>
 							</ul>
 							<div class="table-bottom">
-								<a class="btn" href="#">Book Now</a>
+								<a class="btn" href="/appointments">Book Now</a>
 							</div>
 							<!-- Table Bottom -->
 						</div>

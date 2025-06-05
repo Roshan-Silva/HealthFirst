@@ -31,4 +31,15 @@ class AppointmentController extends Controller
         return redirect()->back()->with('success','appointment submitted successfully !');
 
     }
+
+    public function index(){
+        $appointments = Appointment::all();
+        return view('admin.appointments', compact('appointments'));
+    }
+
+    public function destroy($id){
+        $appointment = Appointment::findOrFail($id);
+        $appointment->delete();
+        return redirect()->back()->with('success','Appointment deleted successfully !');
+    }
 }

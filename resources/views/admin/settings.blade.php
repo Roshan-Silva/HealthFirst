@@ -25,8 +25,9 @@
     </div>
 
     <div class="container">
-        <h1>Change Settings</h1>
-        <hr>
+        {{-- <h1>Change Settings</h1>
+        <hr> --}}
+        <br>
         <form method="POST" action="/settingsUpdate" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">

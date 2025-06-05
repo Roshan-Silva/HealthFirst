@@ -26,8 +26,21 @@ Route::get('/services',function(){
     return view('frontend.services');
 });
 
+Route::get('/doctors',function(){
+    return view('frontend.doctors');
+});
+
+Route::get('/contact',function(){
+    return view('frontend.contact');
+});
+
+
 Route::get('/appointments',function(){
     return view('frontend.appointments');
+});
+
+Route::get('/cleanliness_rule',function(){
+    return view('frontend.cleanliness');
 });
     
 
@@ -69,6 +82,7 @@ Route::controller(PostsController::class)->middleware(['auth', 'verified'])->gro
 
 Route::controller(AppointmentController::class)->middleware(['auth', 'verified'])->group(function (){
     Route::post('/addAppointment', 'store')->name('appointment.store');
+    Route::get('/appointmentsIndex', 'index')->name('appointment.index');
 
 });
 

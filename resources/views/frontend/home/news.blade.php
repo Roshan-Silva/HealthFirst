@@ -6,7 +6,9 @@
 						<div class="section-title">
 							<h2>Keep up with Our Most Recent Medical News.</h2>
 							<img src="{{asset('frontend/img/section-img.png') }}" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<p>Keep informed about breakthroughs, health tips, and hospital updates through our trusted medical news. From innovative treatments to wellness advice, we share valuable insights to help you make informed health decisions.
+
+</p>
 						</div>
 					</div>
 				</div>

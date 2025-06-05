@@ -50,7 +50,7 @@
 													<li><a href="index.html">Home Page 1</a></li>
 												</ul> --}}
 											</li>
-											<li><a href="#">Doctors </a></li>
+											<li><a href="/doctors">Doctors </a></li>
 											<li><a href="/services">Services </a></li>
 											{{-- <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
@@ -60,7 +60,7 @@
 											<li><a href="/blogs">Blogs </a>
 												
 											</li>
-											<li><a href="contact.html">Contact Us</a></li>
+											<li><a href="/contact">Contact Us</a></li>
 										</ul>
 									</nav>
 								</div>

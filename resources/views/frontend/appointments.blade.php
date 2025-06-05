@@ -10,7 +10,7 @@
 						<div class="section-title">
 							<h2>We Are Always Ready to Help You. Book An Appointment</h2>
 							<img src="{{asset('frontend/img/section-img.png') }}" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							
 						</div>
 					</div>
 				</div>
