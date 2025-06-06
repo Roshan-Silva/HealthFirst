@@ -6,9 +6,12 @@
         <h1 class="mt-4">Posts</h1>
     </div>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Add New Post
-    </button>
+    <div padding-left="20px">
+        <button padding="10px" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Add New Post
+        </button>
+        <br>
+    </div>
 
     <div>
         @if (session('success'))
@@ -68,6 +71,7 @@
 
 
     <div>
+        <br>
         <div class="card-body">
             <table id="datatablesSimple">
                 <thead>

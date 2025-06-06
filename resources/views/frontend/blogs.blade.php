@@ -36,7 +36,7 @@
 								<div class="single-main">
 									<!-- News Head -->
 									<div class="news-head">
-										<img src="{{asset('storage/'.$post->image)  }}" alt="#">
+										<img  src="{{asset('storage/'.$post->image)  }}" alt="#">
 									</div>
 									<!-- News Title -->
 									<h1 class="news-title">{{$post->title}}</a></h1>

@@ -2012,7 +2012,7 @@ body{
 	box-shadow: 0px 0px 10px #00000014;
 }
 .blog .single-news img{
-	width:100%;
+	width:50%;
 	margin:0;
 	padding:0;
 	-webkit-transition:all 0.4s ease;
