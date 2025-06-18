@@ -1,25 +1,4 @@
 @foreach ($sliders as $slider)
-    <!-- Start Single Slider -->
-    {{-- <div class="single-slider" style="background-image:url('{{ asset('storage/' . $slider->image) }}')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="text">
-                        <h1>{{ $slider->title }}</h1>
-                        <p>{{ $slider->description }}</p>
-                        <div class="button">
-                            @if ($slider->button_text)
-                                <a href="{{ $slider->button_link }}" class="btn">{{ $slider->button_text }}</a>
-                            @endif
-                            @if ($slider->secondary_button_text)
-                                <a href="{{ $slider->secondary_button_link }}" class="btn primary">{{ $slider->secondary_button_text }}</a>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
 
 
     <!-- Start Single Slider -->

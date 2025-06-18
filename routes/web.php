@@ -6,6 +6,8 @@ use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\admin\PostsController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Models\Slider;
 use App\Models\News;
@@ -15,6 +17,20 @@ Route::get('/', function () {
     $sliders = Slider::all();
     $news = News::latest()->take(3)->get(); // Fetch the latest 3 news items
     return view('frontend.home', compact('sliders','news'));
+});
+
+// Route::get('/home', function () {
+//     $sliders = Slider::all();
+//     $news = News::latest()->take(3)->get(); // Fetch the latest 3 news items
+//     return view('frontend.userhome', compact('sliders','news'));
+// })->middleware(['auth', 'verified']);
+
+// Route::get('/logout', function () {
+//     return redirect('/');
+// })->name('logout');
+
+Route::middleware('auth')->group(function(){
+    Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 });
 
 Route::get('/blogs', function () {

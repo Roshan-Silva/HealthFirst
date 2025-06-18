@@ -10,6 +10,14 @@
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
             </form>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('logout') }}">
+                <li class="fas fa-sign-out-alt"></li>
+                <span class="text-white">Logout</span>
+
+                </a>
+            </li>
             <!-- Navbar-->
             {{-- <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
