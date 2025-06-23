@@ -36,38 +36,7 @@
                         
 					</div>
                     @endforeach
-					{{-- <div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="{{asset('frontend/img/blog2.jpg') }}" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">15 Jul, 2020</div>
-									<h2><a href="blog-single.html">Top five way for solving teeth problems.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-								</div>
-							</div>
-						</div>
-						<!-- End Single Blog -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="{{asset('frontend/img/blog3.jpg') }}" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">05 Jan, 2020</div>
-									<h2><a href="blog-single.html">We provide highly business soliutions.</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-								</div>
-							</div>
-						</div>
-						<!-- End Single Blog -->
-					</div> --}}
+					
 				</div>
                 
 			</div>

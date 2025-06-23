@@ -25,8 +25,7 @@
     </div>
 
     <div class="container">
-        {{-- <h1>Change Settings</h1>
-        <hr> --}}
+        
         <br>
         <form method="POST" action="/settingsUpdate" enctype="multipart/form-data">
             @csrf
@@ -50,31 +49,8 @@
                         <label for="site_address" class="form-label">Site Address</label>
                         <input type="text" class="form-control" id="site_address" name="site_address" value="{{ $setting['site_address'] }}">
                 </div>
-            {{-- <div class="mb-3">
-                <label for="site_logo" class="form-label">Site Logo</label>
-                <input type="file" class="form-control" id="site_logo" name="site_logo">
-                @if ($setting['site_logo'])
-                    <img src="{{ asset('storage/' . $setting['site_logo']) }}" class="img-thumbnail mt-2" style="max-width: 150px;">
-                @else
-                    <p class="text-muted mt-2">No logo uploaded</p>
-                @endif
-                </div>
-                <div class="mb-3">
-                    <label for="site_favicon" class="form-label">Site Favicon</label>
-                    <input type="file" class="form-control" id="site_favicon" name="site_favicon">
-                    @if ($setting['site_favicon'])
-                        <img src="{{ asset('storage/' . $setting['site_favicon']) }}" class="img-thumbnail mt-2" style="max-width: 50px;">
-                    @else
-                        <p class="text-muted mt-2">No favicon uploaded</p>
-                    @endif
-                </div> --}}
-            {{-- <div class="mb-3">
-                <label for="site_status" class="form-label">Site Status</label>
-                <select class="form-select" id="site_status" name="site_status">
-                    <option value="1" {{ $setting['site_status'] == 1 ? 'selected' : '' }}>Active</option>
-                    <option value="0" {{ $setting['site_status'] == 0 ? 'selected' : '' }}>Inactive</option>
-                </select>
-                </div> --}}
+            
+            
                 <div class="mb-3">
                         <label for="site_keywords" class="form-label">Site Keywords</label>
                         <input type="text" class="form-control" id="site_keywords" name="site_keywords" value="{{ $setting['site_keywords'] }}">

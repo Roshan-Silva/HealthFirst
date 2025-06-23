@@ -8,11 +8,7 @@
             <div class="row">
                 <div class="col-12">
                     <h2>Our Doctors</h2>
-                    {{-- <ul class="bread-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><i class="icofont-simple-right"></i></li>
-                        <li class="active">Blog Single</li>
-                    </ul> --}}
+                    
                 </div>
             </div>
         </div>
@@ -44,7 +40,7 @@
                                     <li class="day">Saturday <span>9.00-17.00</span></li>
                                     <li class="day">Sunday <span>13.00-20.00</span></li>
                                 </ul>
-                                {{-- <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a> --}}
+                                
                             </div>
                         </div>
                     </div>
@@ -66,7 +62,7 @@
                                     <li class="day">Saturday <span>9.00-17.00</span></li>
                                     <li class="day">Sunday <span>13.00-20.00</span></li>
                                 </ul>
-                                {{-- <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a> --}}
+                                
                             </div>
                         </div>
                     </div>

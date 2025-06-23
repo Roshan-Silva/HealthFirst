@@ -27,8 +27,7 @@
 											<li><a href="/"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
 											<li><a href="/contact"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
 											<li><a href="/services"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-											{{-- <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	 --}}
+												 --}}
 										</ul>
 									</div>
 									<div class="col-lg-6 col-md-6 col-12">
@@ -36,8 +35,7 @@
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Doctors</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Blogs</a></li>
 											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Appointment</a></li>
-											{{-- <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	 --}}
+											
 										</ul>
 									</div>
 								</div>
@@ -68,18 +66,5 @@
 					</div>
 				</div>
 			</div>
-			<!--/ End Footer Top -->
-			<!-- Copyright -->
-			{{-- <div class="copyright">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-12">
-							<div class="copyright-content">
-								<p>© Copyright 2018  |  All Rights Reserved by <a href="https://www.wpthemesgrid.com" target="_blank">wpthemesgrid.com</a> </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> --}}
-			<!--/ End Copyright -->
+			
 		</footer>

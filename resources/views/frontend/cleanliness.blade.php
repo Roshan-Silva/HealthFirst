@@ -9,11 +9,7 @@
 					<div class="row">
 						<div class="col-12">
 							<h2>Cleanliness Rule Details</h2>
-							{{-- <ul class="bread-list">
-								<li><a href="index.html">Home</a></li>
-								<li><i class="icofont-simple-right"></i></li>
-								<li class="active">Portfolio Details</li>
-							</ul> --}}
+							
 						</div>
 					</div>
 				</div>
@@ -34,14 +30,7 @@
 									{{-- <img src="img/call-bg.jpg" alt="#"> --}}
 								</div>
 							</div>
-							{{-- <div class="date">
-								<ul>
-									<li><span>Category :</span> Heart Surgery</li>
-									<li><span>Date :</span> April 20, 2019</li>
-									<li><span>Client :</span> Suke Agency</li>
-									<li><span>Ags :</span> Typo</li>
-								</ul>
-							</div> --}}
+							
 							<div class="body-text">
 								<h3>Commitment to Hygiene Excellence</h3>
 								<p>At our hospital, we strictly follow cleanliness and hygiene protocols to ensure a safe and healthy environment for patients, staff, and visitors. Regular sanitization, proper waste disposal, and infection control measures are maintained to uphold the highest standards of cleanliness.</p>
@@ -49,14 +38,7 @@
 								<p>At our hospital, we strictly follow cleanliness and hygiene protocols to ensure a safe and healthy environment for patients, staff, and visitors. Regular sanitization, proper waste disposal, and infection control measures are maintained to uphold the highest standards of cleanliness.</p>
 								<p>We enforce rigorous cleaning schedules, air purification systems, and waste segregation to minimize contamination risks. From operating theaters to waiting areas, every space undergoes thorough sterilization. Your health is our priority, and we maintain a zero-tolerance policy towards hygiene negligence.</p>
 								<p>We understand the importance of cleanliness in healthcare, and we are committed to providing a hygienic space for all. Our protocols are regularly reviewed and updated to align with the latest health guidelines, ensuring that we meet and exceed industry standards.</p>
-								{{-- <div class="share">
-									<h4>Share Now -</h4>
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-									</ul>
-								</div> --}}
+								
 							</div>
 						</div>
 					</div>

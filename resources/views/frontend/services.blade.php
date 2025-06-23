@@ -8,11 +8,7 @@
             <div class="row">
                 <div class="col-12">
                     <h2>Our Services</h2>
-                    {{-- <ul class="bread-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><i class="icofont-simple-right"></i></li>
-                        <li class="active">Blog Single</li>
-                    </ul> --}}
+                    
                 </div>
             </div>
         </div>
@@ -60,18 +56,7 @@
 					<div class="col-lg-6 col-12">
 						<!-- Start Choose Rights -->
 						<div class="choose-right">
-							{{-- <div class="video-image"> --}}
-								<!-- Video Animation -->
-								{{-- <div class="promo-video">
-									<div class="waves-block">
-										<div class="waves wave-1"></div>
-										<div class="waves wave-2"></div>
-										<div class="waves wave-3"></div>
-									</div>
-								</div> --}}
-								<!--/ End Video Animation -->
-								{{-- <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
-							</div> --}}
+							
 						</div>
 						<!-- End Choose Rights -->
 					</div>
@@ -86,12 +71,7 @@
                     <div class="col-lg-12 col-md-12 col-12">
                         <div class="content">
                             <h2>Do you need Emergency Medical Care? Call @ {{$main_settings['site_phone']}}</h2>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.</p> --}}
-                            {{-- <div class="button">
-                                <a href="#" class="btn">Contact Now</a>
-                                <a href="#" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
-                            </div> --}}
-                        </div>
+                            
                     </div>
                 </div>
             </div>
@@ -107,7 +87,7 @@
 						<div class="section-title">
 							<h2>We Offer Different Services To Improve Your Health</h2>
 							<img src="{{asset('frontend/img/section-img.png') }}" alt="#">
-							{{-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> --}}
+							
 						</div>
 					</div>
 				</div>
