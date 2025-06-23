@@ -2,15 +2,13 @@
 
 @section('content')
 
-<!-- Slider Area -->
+
 		<section class="slider">
 			<div class="hero-slider">
 				@include('frontend.home.slider')
 			</div>
 		</section>
 		
-
-		<!-- Start Feautes -->
 		<section class="Feautes section">
 			<div class="container">
 				<div class="row">
@@ -25,7 +23,6 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
 						<div class="single-features">
 							<div class="signle-icon">
 								<i class="icofont icofont-ambulance-cross"></i>
