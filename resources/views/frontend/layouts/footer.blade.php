@@ -27,7 +27,7 @@
 											<li><a href="/"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
 											<li><a href="/contact"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
 											<li><a href="/services"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-												 --}}
+												
 										</ul>
 									</div>
 									<div class="col-lg-6 col-md-6 col-12">

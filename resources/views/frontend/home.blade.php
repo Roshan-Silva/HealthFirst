@@ -8,6 +8,7 @@
 				@include('frontend.home.slider')
 			</div>
 		</section>
+		<br>
 		
 		<section class="Feautes section">
 			<div class="container">
@@ -21,40 +22,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-4 col-12">
-						<div class="single-features">
-							<div class="signle-icon">
-								<i class="icofont icofont-ambulance-cross"></i>
-							</div>
-							<h3>Emergency Help</h3>
-							<p>Our expert team is always ready for life-threatening injuries and critical conditions. Fast response, advanced equipment, and compassionate care—when every second counts.</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features">
-							<div class="signle-icon">
-								<i class="icofont icofont-medical-sign-alt"></i>
-							</div>
-							<h3>Enriched Pharmacy</h3>
-							<p>Get genuine prescriptions, wellness products, and personalized advice from our licensed pharmacists. Your health is our priority—inside and outside the clinic.</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features last">
-							<div class="signle-icon">
-								<i class="icofont icofont-stethoscope"></i>
-							</div>
-							<h3>Medical Treatment</h3>
-							<p>From diagnostics to specialized treatments, our doctors use cutting-edge technology to create tailored health plans. Because everyone deserves expert care.</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-				</div>
+				
 			</div>
 		</section>
 		<!--/ End Feautes -->
@@ -236,7 +204,7 @@
 		@include('frontend.home.news')
 		
 		<!-- Start clients -->
-		<div class="clients overlay">
+		{{-- <div class="clients overlay">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-12">
@@ -272,13 +240,13 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> --}}
 		<!--/Ens clients -->
 		
 		
 		
 		<!-- Start Newsletter Area -->
-		<section class="newsletter section">
+		{{-- <section class="newsletter section">
 			<div class="container">
 				<div class="row ">
 					<div class="col-lg-6  col-12">
@@ -302,7 +270,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> --}}
 		<!-- /End Newsletter Area -->
 
 @endsection
