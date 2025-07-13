@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\HomeController;
 use App\Http\Controllers\admin\NewsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\admin\SliderController;
@@ -58,11 +59,18 @@ Route::get('/appointments',function(){
 Route::get('/cleanliness_rule',function(){
     return view('frontend.cleanliness');
 });
+
+Route::controller(HomeController::class)->middleware(['auth', 'role:admin'])->group(function (){
+    Route::get('/dashboard', 'index')->name('dashboard');
+    // Route::get('/admin/home/{id}', 'show')->name('admin.home.show');
+    // Route::get('/admin/home/{id}/edit', 'edit')->name('admin.home.edit');
+    // Route::put('/admin/home/{id}', 'update')->name('admin.home.update');
+});
     
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth', 'role:admin'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('admin.dashboard');
+// })->middleware(['auth', 'role:admin'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

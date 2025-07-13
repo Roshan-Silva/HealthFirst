@@ -10,7 +10,7 @@
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body">Total Users</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <li>10000</li>
+                                        <li>{{$userCount}}</li>
                                     </div>
                                 </div>
                             </div>
@@ -18,7 +18,7 @@
                                 <div class="card bg-warning text-white mb-4">
                                     <div class="card-body">Total Appointments</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <li>6000</li>
+                                        <li>{{ $appointmentCount }}</li>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,42 @@
                                         <i class="fas fa-chart-area me-1"></i>
                                         Appointments
                                     </div>
-                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                    <div class="card-body">
+                                        <canvas id="myAreaChart" width="100%" height="40"></canvas>
+                                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                                        <script>
+                                            const labels = {!! json_encode($appMonths) !!};
+                                            const data = {!! json_encode($appCounts) !!};
+
+                                            const ctx = document.getElementById('myAreaChart').getContext('2d');
+                                            const myAreaChart = new Chart(ctx, {
+                                                type: 'line',
+                                                data: {
+                                                    labels: labels,
+                                                    datasets: [{
+                                                        label: 'Appointments',
+                                                        data: data,
+                                                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                                        borderColor: 'rgba(75, 192, 192, 1)',
+                                                        borderWidth: 1
+                                                    }]
+                                                },
+                                                options: {
+                                                    responsive: true,
+                                                    plugins: {
+                                                        legend: { display: false }
+                                                    },
+                                                    scales: {
+                                                        y: {
+                                                            beginAtZero: true,
+                                                            precision: 0
+                                                        }
+                                                    }
+                                                }
+                                            });
+                                        </script>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-xl-6">
@@ -48,7 +83,42 @@
                                         <i class="fas fa-chart-bar me-1"></i>
                                         Users
                                     </div>
-                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                                    <div class="card-body">
+                                        <canvas id="myBarChart" width="100%" height="40"></canvas>
+                                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                                        <script>
+                                            const UserLabels = {!! json_encode($months) !!};
+                                            const userData = {!! json_encode($counts) !!};
+
+                                            const ctxUser = document.getElementById('myBarChart').getContext('2d');
+                                            const myBarChart = new Chart(ctxUser, {
+                                                type: 'bar',
+                                                data: {
+                                                    labels: UserLabels,
+                                                    datasets: [{
+                                                        label: 'Users Registered',
+                                                        data: userData,
+                                                        backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                                                        borderColor: 'rgba(54, 162, 235, 1)',
+                                                        borderWidth: 1
+                                                    }]
+                                                },
+                                                options: {
+                                                    responsive: true,
+                                                    plugins: {
+                                                        legend: { display: false }
+                                                    },
+                                                    scales: {
+                                                        y: {
+                                                            beginAtZero: true,
+                                                            precision: 0
+                                                        }
+                                                    }
+                                                }
+                                            });
+                                        </script>
+                                    </div>
                                 </div>
                             </div>
                         </div>
