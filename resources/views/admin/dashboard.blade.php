@@ -68,7 +68,16 @@
                                                     scales: {
                                                         y: {
                                                             beginAtZero: true,
-                                                            precision: 0
+                                                            precision: 0,
+                                                            ticks: {
+                                                                // This ensures only integer ticks appear
+                                                                callback: function(value) {
+                                                                    if (Number.isInteger(value)) {
+                                                                        return value;
+                                                                    }
+                                                                },
+                                                                // stepSize: 1  // 👈 Optional: manually control step interval
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -112,7 +121,16 @@
                                                     scales: {
                                                         y: {
                                                             beginAtZero: true,
-                                                            precision: 0
+                                                            precision: 0,
+                                                            ticks: {
+                                                                // This ensures only integer ticks appear
+                                                                callback: function(value) {
+                                                                    if (Number.isInteger(value)) {
+                                                                        return value;
+                                                                    }
+                                                                },
+                                                                // stepSize: 1  // 👈 Optional: manually control step interval
+                                                            }
                                                         }
                                                     }
                                                 }
