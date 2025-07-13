@@ -7,6 +7,7 @@ use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\admin\PostsController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\admin\DoctorController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -108,6 +109,13 @@ Route::controller(AppointmentController::class)->middleware(['auth', 'verified']
     Route::post('/addAppointment', 'store')->name('appointment.store');
     Route::get('/appointmentsIndex', 'index')->name('appointment.index');
 
+});
+
+Route::controller(DoctorController::class)->middleware(['auth', 'verified'])->group(function (){
+    Route::get('/doctorsIndex', 'index')->name('doctors.index');
+    Route::post('/doctorStore', 'store')->name('doctor.store');
+    Route::post('/doctorUpdate', 'update')->name('doctor.edit');
+    Route::get('/doctorDelete/{id}', 'destroy')->name('doctor.delete');
 });
 
 

@@ -63,6 +63,10 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                     Appointments
                 </a>
+                <a class="nav-link" href="/doctorsIndex">
+                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    Doctors
+                </a>
             </div>
         </div>
         {{-- <div class="sb-sidenav-footer">
