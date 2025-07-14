@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Appointment;
+use App\Models\Doctor;
 use Illuminate\Support\Facades\DB;
 use carbon\Carbon;
 
@@ -15,7 +16,8 @@ class HomeController extends Controller
     {
         // Fetch all users from the database
         $userCount = User::count();
-        $appointmentCount = Appointment::count(); // Assuming you have an Appointment model
+        $appointmentCount = Appointment::count(); 
+        $doctorCount = Doctor::count();
 
         $monthlyUsers = User::select(
             DB::raw('COUNT(*) as count'),
@@ -43,7 +45,7 @@ class HomeController extends Controller
         $appMonths = $monthlyAppointments->pluck('month');
         $appCounts = $monthlyAppointments->pluck('count');
 
-        return view('admin.dashboard', compact('userCount', 'appointmentCount','months', 'counts', 'appMonths', 'appCounts'));
+        return view('admin.dashboard', compact('userCount', 'appointmentCount', 'doctorCount', 'months', 'counts', 'appMonths', 'appCounts'));
     }
 
     // public function show($id)
