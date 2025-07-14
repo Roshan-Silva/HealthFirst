@@ -15,6 +15,11 @@ class DoctorController extends Controller
         return view('admin.doctors', compact('doctors'));
         
     }
+    public function home()
+    {
+        $doctors = Doctor::all();
+        return view('frontend.doctors', compact('doctors'));
+    }
 
     public function store(Request $request)
     {

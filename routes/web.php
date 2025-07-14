@@ -44,9 +44,7 @@ Route::get('/services',function(){
     return view('frontend.services');
 });
 
-Route::get('/doctors',function(){
-    return view('frontend.doctors');
-});
+Route::get('/doctors',[DoctorController::class, 'home'])->name('doctors.home');
 
 Route::get('/contact',function(){
     return view('frontend.contact');
