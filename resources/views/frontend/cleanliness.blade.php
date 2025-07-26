@@ -27,7 +27,7 @@
 								<div class="pf-details-slider">
 									<img src="{{asset('frontend/img/pf02.jpg') }}" >
 									<img src="{{asset('frontend/img/pf01.jpg') }}" >
-									{{-- <img src="img/call-bg.jpg" alt="#"> --}}
+									
 								</div>
 							</div>
 							

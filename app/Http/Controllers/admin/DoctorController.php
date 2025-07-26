@@ -23,7 +23,7 @@ class DoctorController extends Controller
 
     public function store(Request $request)
     {
-        // Logic to store a new doctor
+        
         $request->validate([
             'name' => 'required|string|max:255',
             'specialization' => 'required|string|max:255',
@@ -45,13 +45,13 @@ class DoctorController extends Controller
 
 
 
-        // Validate and save the doctor data
+        
         return redirect()->route('doctors.index')->with('success', 'Doctor added successfully.');
     }
 
     public function update(Request $request)
     {
-        // Logic to update an existing doctor
+        
         $request->validate([
             'id' => 'required|exists:doctors,id',
             'name' => 'required|string|max:255',
@@ -71,13 +71,13 @@ class DoctorController extends Controller
         $doctor->availability_in_saturday = $request->availability_in_saturday;
         $doctor->availability_in_sunday = $request->availability_in_sunday;
         $doctor->save();
-        // Validate and update the doctor data
+        
         return redirect()->route('doctors.index')->with('success', 'Doctor updated successfully.');
     }
 
     public function destroy($id)
     {
-        // Logic to delete a doctor by ID
+        
         $doctor = Doctor::findOrFail($id);
         $doctor->delete();
 

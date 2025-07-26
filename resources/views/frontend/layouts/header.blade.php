@@ -6,14 +6,13 @@
 			<div class="inner">
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-12">
-						<!-- Start Logo -->
+						
 						<div class="logo">
 							<img src="{{asset('frontend/img/logo_2.png') }}" alt="#">
 						</div>
-						<!-- End Logo -->
-						<!-- Mobile Nav -->
+					
 						<div class="mobile-nav"></div>
-						<!-- End Mobile Nav -->
+						
 					</div>
 					<div class="col-lg-7 col-md-9 col-12">
 						<!-- Main Menu -->
@@ -50,5 +49,5 @@
 			</div>
 		</div>
 	</div>
-	<!--/ End Header Inner -->
+	
 </header>

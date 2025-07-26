@@ -23,15 +23,15 @@ class PostsController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            // Store the image and get the path
+            
             $imagePath = $request->file('image')->store('posts_images', 'public');
-            // $request->merge(['image' => $imagePath]); // Add the image path to the request data
+           
         }
 
         Posts::create([
             'title' => $validatedData['title'],
             'content' => $validatedData['content'],
-            'image' => $imagePath ?? null, // Use the stored image path or null if no image was uploaded 
+            'image' => $imagePath ?? null, 
         ]);
         return redirect()->back()->with('success', 'Post created successfully.');
     }
@@ -48,9 +48,9 @@ class PostsController extends Controller
         $post = Posts::findOrFail($validatedData['id']);
 
         if ($request->hasFile('image')) {
-            // Store the new image and get the path
+           
             $imagePath = $request->file('image')->store('posts_images', 'public');
-            $post->image = $imagePath; // Update the image path
+            $post->image = $imagePath; 
         }
 
         $post->title = $validatedData['title'];

@@ -14,29 +14,20 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Slider;
 use App\Models\News;
 use App\Models\Posts;
+use App\Models\Doctor;
 
 Route::get('/', function () {
     $sliders = Slider::all();
-    $news = News::latest()->take(3)->get(); // Fetch the latest 3 news items
+    $news = News::latest()->take(3)->get(); 
     return view('frontend.home', compact('sliders','news'));
 });
-
-// Route::get('/home', function () {
-//     $sliders = Slider::all();
-//     $news = News::latest()->take(3)->get(); // Fetch the latest 3 news items
-//     return view('frontend.userhome', compact('sliders','news'));
-// })->middleware(['auth', 'verified']);
-
-// Route::get('/logout', function () {
-//     return redirect('/');
-// })->name('logout');
 
 Route::middleware('auth')->group(function(){
     Route::get('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 });
 
 Route::get('/blogs', function () {
-    $posts = Posts::latest()->take(6)->get(); // Fetch the latest 6 posts
+    $posts = Posts::latest()->take(6)->get(); 
     return view('frontend.blogs', compact('posts'));
 });
 
@@ -61,15 +52,7 @@ Route::get('/cleanliness_rule',function(){
 
 Route::controller(HomeController::class)->middleware(['auth', 'role:admin'])->group(function (){
     Route::get('/dashboard', 'index')->name('dashboard');
-    // Route::get('/admin/home/{id}', 'show')->name('admin.home.show');
-    // Route::get('/admin/home/{id}/edit', 'edit')->name('admin.home.edit');
-    // Route::put('/admin/home/{id}', 'update')->name('admin.home.update');
 });
-    
-
-// Route::get('/dashboard', function () {
-//     return view('admin.dashboard');
-// })->middleware(['auth', 'role:admin'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

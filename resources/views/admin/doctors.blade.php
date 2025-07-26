@@ -35,8 +35,8 @@
                         <td>{{ $doctor->availability_in_saturday }}</td>
                         <td>{{ $doctor->availability_in_sunday }}</td>
                         <td>
-                            <!-- Add edit and delete buttons here -->
-                            <!-- Example: -->
+                            
+                           
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal{{ $doctor->id }}">
                                 Edit
                             </button>

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\News; // Assuming you have a News model
+use App\Models\News; 
 
 class NewsController extends Controller
 {
@@ -25,15 +25,13 @@ class NewsController extends Controller
         ]);
 
         if ($request->hasFile('image_link')) {
-            // Store the image and get the path
+            
             $imagePath = $request->file('image_link')->store('news_images', 'public');
             
         }
 
-        // Logic to store the news item in the database
-        // For example:
         News::create([
-            'image_link' => $imagePath ?? null, // Use the stored image path or null if no image was uploaded
+            'image_link' => $imagePath ?? null, 
             'date' => $validatedData['date'],
             'title' => $validatedData['title'],
             'description' => $validatedData['description'],
@@ -55,12 +53,12 @@ class NewsController extends Controller
         $newsItem = News::findOrFail($validatedData['id']);
 
         if ($request->hasFile('image_link')) {
-            // Store the new image and get the path
+          
             $imagePath = $request->file('image_link')->store('news_images', 'public');
-            $newsItem->image_link = $imagePath; // Update the image path
+            $newsItem->image_link = $imagePath; 
         }
 
-        // Update other fields
+      
         $newsItem->date = $validatedData['date'];
         $newsItem->title = $validatedData['title'];
         $newsItem->description = $validatedData['description'];
